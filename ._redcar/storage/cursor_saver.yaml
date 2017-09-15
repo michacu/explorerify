@@ -1,0 +1,23 @@
+--- 
+cursor_positions: 
+  - :path: app/assets/stylesheets/application.css.scss
+    :cursor_offset: 759
+    :timestamp: 2017-09-15 18:10:41.986000 +02:00
+  - :path: Gemfile
+    :cursor_offset: 490
+    :timestamp: 2017-09-15 18:06:07.781000 +02:00
+  - :path: app/assets/stylesheets/index.scss
+    :cursor_offset: 171
+    :timestamp: 2017-09-15 18:10:22.077000 +02:00
+  - :path: app/assets/javascripts/application.js
+    :cursor_offset: 727
+    :timestamp: 2017-09-15 18:04:30.673000 +02:00
+    :selection_offset: 695
+    :block_selection_mode: true
+  - :path: app/assets/stylesheets/application.css.sass
+    :cursor_offset: 758
+    :timestamp: 2017-09-15 18:11:51.468000 +02:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 428
+    :timestamp: 2017-09-15 18:14:57.077000 +02:00
+files_to_retain: 0

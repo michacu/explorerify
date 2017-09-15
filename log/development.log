@@ -144,3 +144,111 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 72ms (Views: 67.9ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:43:30 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10386ms (Views: 10025.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:04:36 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 10043ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  c:/explorerify/app/assets/config
+  c:/explorerify/app/assets/images
+  c:/explorerify/app/assets/javascripts
+  c:/explorerify/app/assets/stylesheets
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actioncable-5.1.4/lib/assets/compiled
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/actionview-5.1.4/lib/assets/compiled
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  c:/explorerify/node_modules
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  c:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/bootstrap-sass-3.3.7/assets/images):
+    4:     <title>Explorerify</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:      <!-- Custom styles for this template -->
+  
+app/assets/javascripts/application.js:14
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___262413216_35996760'
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:06:45 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10310ms (Views: 9978.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:10:49 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 102ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    4:     <title>Explorerify</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9: 
+   10:      <!-- Custom styles for this template -->
+  
+app/assets/stylesheets/application.css.scss:18
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___391192776_101133204'
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:12:13 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4995ms (Views: 4963.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:15:00 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 249ms (Views: 210.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:17:02 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 1025ms (Views: 680.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:17:41 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 194ms (Views: 158.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:17:44 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 144ms (Views: 133.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 18:18:29 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 187ms (Views: 154.2ms)
+
+
