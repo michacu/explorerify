@@ -95,3 +95,52 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:23:58 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 988ms (Views: 522.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:29:27 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 843ms (Views: 411.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:33:51 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 7913ms (Views: 7486.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:35:49 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 942ms (Views: 510.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:37:42 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7059ms (Views: 7055.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:38:19 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 1071ms (Views: 632.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 16:38:46 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 72ms (Views: 67.9ms)
+
+
