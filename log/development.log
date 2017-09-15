@@ -405,3 +405,52 @@ Processing by IndexController#index as HTML
 Completed 200 OK in 122ms (Views: 118.5ms)
 
 
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:03:16 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 1070ms (Views: 616.0ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:03:24 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 128ms (Views: 124.1ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:05:24 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 126ms (Views: 122.6ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:06:23 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 148ms (Views: 144.3ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:09:04 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 123ms (Views: 119.2ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:10:54 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 14647ms (Views: 14185.4ms)
+
+
+Started GET "/index/index" for 127.0.0.1 at 2017-09-15 19:11:38 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 209ms (Views: 206.3ms)
+
+
