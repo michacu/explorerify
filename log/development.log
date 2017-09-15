@@ -1,0 +1,21 @@
+Started GET "/" for 127.0.0.1 at 2017-09-15 15:24:44 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/michacu/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/michacu/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 499ms (Views: 48.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 15:26:41 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3535ms (Views: 3532.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-15 15:27:06 +0200
+Processing by IndexController#index as HTML
+  Rendering index/index.html.erb within layouts/application
+  Rendered index/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 797ms (Views: 354.8ms)
+
+
