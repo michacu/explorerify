@@ -12,6 +12,7 @@ gem 'rails', '~> 5.1.4'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
+gem 'wdm', '~> 0.1.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.7'
@@ -20,6 +21,7 @@ gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.3'
+gem 'tinymce-rails', '~> 4.6', '>= 4.6.7'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
