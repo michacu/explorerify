@@ -1,27 +1,24 @@
-<%= form_with(model: comment, local: true) do |form| %>
-  <% if comment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
-
-      <ul>
-      <% comment.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= form.label :post_id %>
-    <%= form.number_field :post_id, id: :comment_post_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :comment_body %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+<%= form_for([@post,@post.comments.build]) do |f| %>
+    <form role="form">
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <%= f.label :name %>
+          <%= f.text_field :name, id: :comment_name %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <%= f.label :body %>
+          <%= f.text_area :body, id: :post_body, :rows => 2, :cols => 80 %>
+        </div>
+      </div>
+      </div>    
+      <hr>
+      <div class="row">
+        <%= f.submit :class => 'glyphicon glyphicon-plus btn btn-success' %>
+      </div>
+    </form>
 <% end %>

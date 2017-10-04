@@ -1,18 +1,22 @@
 <!-- Page Content -->
-    <div class="container">
+    <div class="container" style="background: #D6D6D6; padding: 10px;">
       <div class="row">
         <!-- Post Content Column -->
+        <% if user_signed_in? %>
         <div class="col-lg-8">
-        <%= link_to 'New Post', new_post_path %>
+          <%= link_to ' New Post', new_post_path, class: "glyphicon glyphicon-plus btn btn-success" %>
         </div>
+        <% end %>
         <% @posts.each do |post| %>
         <div class="col-lg-8">
-          <%= link_to 'Show', post %>
-          <%= link_to 'Edit', edit_post_path(post) %>
-          <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
           <!-- Title -->
-          <h3 class="mt-4"><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
-          <hr>
+          <h3 class="mt-4">
+          <div style="text-align: right; display: inline-block;">
+          <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
+          <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
+          </div>
+          <a href="/posts/<%= post.id %>"><%= post.title %></a>
+          </h3>
           <div>
           <%= post.anotation %>
           <hr>

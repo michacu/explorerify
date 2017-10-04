@@ -1,9 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  author_id: 1
   body: MyText
+  anotation: MyText
+  title: MyString
+  post: one
 
 two:
-  title: MyString
+  author_id: 1
   body: MyText
+  anotation: MyText
+  title: MyString
+  post: two
