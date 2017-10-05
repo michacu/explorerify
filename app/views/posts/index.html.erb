@@ -1,28 +1,48 @@
 <!-- Page Content -->
-    <div class="container" style="background: #D6D6D6; padding: 10px;">
+    <div class="container" style="padding: 10px;">
+
       <div class="row">
-        <!-- Post Content Column -->
-        <% if user_signed_in? %>
-        <div class="col-lg-8">
-          <%= link_to ' New Post', new_post_path, class: "glyphicon glyphicon-plus btn btn-success" %>
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+
+          <h1 class="my-4" style="display: inline;">News</h1>
+          <% if user_signed_in? %>
+          <div class="mb-4 new-post">
+              <%= link_to ' New Post', new_post_path, class: "glyphicon glyphicon-plus btn btn-success" %>
+          </div>
+          <% end %>
+          <!-- Blog Post -->
+          <% @posts.each do |post| %>
+          <div class="card mb-4" style="padding-bottom: 20px;">
+            <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">
+                <%= post.title %>
+                <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
+                <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
+              </h2>
+              <p class="card-text"><%= post.anotation %></p>
+              <a href="/posts/<%= post.id %>" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on January 1, 2017 by
+              <a href="#">User</a>
+            </div>
+          </div>
+          <% end %>
+
+          <!-- Pagination -->
+          <ul class="pagination justify-content-center mb-4">
+            <li class="page-item">
+              <a class="page-link" href="#">&larr; Older</a>
+            </li>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">Newer &rarr;</a>
+            </li>
+          </ul>
+
         </div>
-        <% end %>
-        <% @posts.each do |post| %>
-        <div class="col-lg-8">
-          <!-- Title -->
-          <h3 class="mt-4">
-          <div style="text-align: right; display: inline-block;">
-          <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
-          <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
-          </div>
-          <a href="/posts/<%= post.id %>"><%= post.title %></a>
-          </h3>
-          <div>
-          <%= post.anotation %>
-          <hr>
-          </div>
-          </div>
-        <% end %>
 
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
@@ -89,3 +109,4 @@
       <!-- /.row -->
 
     </div>
+    <!-- /.container -->
