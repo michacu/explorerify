@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20171003212225) do
     t.text "body"
     t.text "anotation"
     t.string "title"
+    t.string "tags"
+    t.string "title_image"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

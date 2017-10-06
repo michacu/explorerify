@@ -30,7 +30,23 @@
       <div class="form-group">
         <div class="field">
           <%= form.label :anotation %>
-          <%= form.text_area :anotation, id: :post_anotation, :rows => 2, :cols => 80 %>
+          <%= form.text_area :anotation, id: :post_anotation, :rows => 4, :cols => 80 %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <%= form.label :title_image %>
+          <%= form.text_field :title_image, id: :post_title_image %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <%= form.label :tags %>
+          <%= form.text_field :tags, id: :post_tags %>
         </div>
       </div>
       </div>
