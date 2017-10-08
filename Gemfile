@@ -22,6 +22,7 @@ gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.4'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.3'
 gem 'tinymce-rails', '~> 4.6', '>= 4.6.7'
+gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
