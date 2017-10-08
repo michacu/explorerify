@@ -16,7 +16,7 @@
 <div class="row">
     <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
     <form role="form">
-      <h2>Register</h2>
+      <h2>Post</h2>
       <hr class="colorgraph">
       <div class="row">
       <div class="form-group">
@@ -29,15 +29,7 @@
       <div class="row">
       <div class="form-group">
         <div class="field">
-          <%= form.label :anotation %>
-          <%= form.text_area :anotation, id: :post_anotation, :rows => 4, :cols => 80 %>
-        </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="form-group">
-        <div class="field">
-          <%= form.label :title_image %>
+          <%= form.label :title_image %><br />
           <%= form.text_field :title_image, id: :post_title_image %>
         </div>
       </div>
@@ -45,7 +37,7 @@
       <div class="row">
       <div class="form-group">
         <div class="field">
-          <%= form.label :tags %>
+          <%= form.label :tags %><br />
           <%= form.text_field :tags, id: :post_tags %>
         </div>
       </div>
@@ -53,7 +45,15 @@
       <div class="row">
       <div class="form-group">
         <div class="field">
-          <%= form.label :body %>
+          <%= form.label :anotation %><br />
+          <%= form.text_area :anotation, id: :post_anotation, :rows => 4, :cols => 80 %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <%= form.label :body %><br />
           <%= form.text_area :body, id: :post_body, :class => "tinymce", :rows => 20, :cols => 80 %>
           <%= tinymce %>
         </div>

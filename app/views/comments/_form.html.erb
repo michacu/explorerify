@@ -1,23 +1,22 @@
 <%= form_for([@post,@post.comments.build]) do |f| %>
     <form role="form">
-      <div class="row">
+      <div class="row comment-margin">
       <div class="form-group">
+        <%= f.label :name %>
         <div class="field">
-          <%= f.label :name %>
           <%= f.text_field :name, id: :comment_name %>
         </div>
       </div>
       </div>
-      <div class="row">
+      <div class="row comment-margin">
       <div class="form-group">
+        <%= f.label :body %>
         <div class="field">
-          <%= f.label :body %>
-          <%= f.text_area :body, id: :post_body, :rows => 2, :cols => 80 %>
+          <%= f.text_area :body, id: :post_body, :rows => 2, :cols => 120 %>
         </div>
       </div>
       </div>    
-      <hr>
-      <div class="row">
+      <div class="row comment-margin">
         <%= f.submit :class => 'glyphicon glyphicon-plus btn btn-success' %>
       </div>
     </form>
