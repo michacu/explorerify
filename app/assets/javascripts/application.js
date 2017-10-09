@@ -14,6 +14,8 @@
 //= require jquery
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require tinymce
+//= require bootstrap-wysihtml5
+//= require bootstrap-wysihtml5/wysihtml5x-toolbar.js
+//= require bootstrap-wysihtml5/handlebars.runtime.min.js
 //= require menu.js
 //= require_tree .

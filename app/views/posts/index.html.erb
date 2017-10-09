@@ -1,11 +1,8 @@
 <!-- Page Content -->
     <div class="container" style="padding: 10px;">
-
       <div class="row">
-
         <!-- Blog Entries Column -->
         <div class="col-md-8">
-
           <h1 class="my-4" style="display: inline;">News</h1>
           <% if user_signed_in? %>
           <div class="mb-4 new-post">
@@ -19,8 +16,10 @@
             <div class="card-body">
               <h2 class="card-title">
                 <%= post.title %>
-                <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
-                <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
+                <% if user_signed_in? %>
+                  <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
+                  <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
+                <% end %>
               </h2>
               <p class="card-text"><%= post.anotation %></p>
               <a href="/posts/<%= post.id %>" class="btn btn-primary" style="color: #ffffff;">Read More &rarr;</a>

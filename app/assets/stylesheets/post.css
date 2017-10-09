@@ -54,3 +54,7 @@
 .category-item {
     margin: 1px !important;
 }
+.post-margin {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}

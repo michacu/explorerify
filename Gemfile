@@ -21,7 +21,7 @@ gem 'autoprefixer-rails', '~> 7.1', '>= 7.1.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.3'
-gem 'tinymce-rails', '~> 4.6', '>= 4.6.7'
+gem 'bootstrap-wysihtml5-rails', '~> 0.3.3.8'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
