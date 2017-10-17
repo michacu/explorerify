@@ -12,6 +12,8 @@ $(document).ready(function ($) {
 
 $(function() { 
     $('#navbar').on('click','.irp-menu-item', function ( e ) {
+        e.preventDefault();
         $(this).parents('#navbar').find('.active').removeClass('active').end().end().addClass('active');
+        window.location.href = ($('a', this).attr('href'));
     });
 });
