@@ -10,7 +10,7 @@
 <!-- layout co je na kazdej stranke vrch po velk obrazok a paticka -->
   <body>
      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default navigation-content">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -39,9 +39,9 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
-      
-    <%= yield %>
-
+    <div class="main-content"> 
+      <%= yield %>
+    </div>
     <!-- Footer -->
     <footer class="py-5 bg-dark" style="padding-top: 80px;">
       <div class="container" style="text-align: center;">

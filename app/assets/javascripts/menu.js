@@ -17,3 +17,12 @@ $(function() {
         window.location.href = ($('a', this).attr('href'));
     });
 });
+
+$(document).scroll(function() {
+    console.log("calling scroll", $(".navigation-content"));
+  if( $(this).scrollTop() > 50 ) {
+    $(".navigation-content").addClass("main-nav-scrolled");
+  } else {
+    $(".navigation-content").removeClass("main-nav-scrolled");
+  }
+});

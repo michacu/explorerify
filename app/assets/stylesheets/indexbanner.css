@@ -21,3 +21,14 @@ body {
 .card {
     height: 100%;
 }
+
+.navigation-content .main-content {
+    position: relative;
+}
+
+.main-nav-scrolled {
+  position: fixed !important;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+}
