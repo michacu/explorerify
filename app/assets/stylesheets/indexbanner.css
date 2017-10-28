@@ -32,3 +32,15 @@ body {
   width: 100%;
   top: 0;
 }
+
+.equal {  
+    display: -webkit-flex;
+    display: flex;
+}
+
+.card-button-position {
+  position: absolute;
+  right:    3px;
+  bottom:   3px;
+  color: #ffffff !important;
+}
