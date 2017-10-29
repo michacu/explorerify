@@ -16,7 +16,7 @@
             <div class="card-body">
               <h2 class="card-title">
                 <%= post.title %>
-                <% if user_signed_in? %>
+                <% if user_signed_in? && current_user.id == post.author_id %>
                   <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
                   <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
                 <% end %>
