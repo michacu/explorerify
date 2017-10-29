@@ -19,7 +19,6 @@ $(function() {
 });
 
 $(document).scroll(function() {
-    console.log("calling scroll", $(".navigation-content"));
   if( $(this).scrollTop() > 50 ) {
     $(".navigation-content").addClass("main-nav-scrolled");
   } else {
