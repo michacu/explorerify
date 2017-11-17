@@ -1,3 +1,14 @@
+	<% flash.each do |name,msg| %>
+        <% if msg.is_a?(String) %>
+        <div class="alert alert-info">
+          <% if name == :notice %>
+            <div class="alert-success"><%= msg %></div>
+          <% else %>
+            <div class="alert-error"><%= msg %></div>
+          <% end %>
+          </div>
+        <% end %>
+      <% end %>
 <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
 <div class="container">
 <div class="row">
@@ -29,7 +40,7 @@
       <hr class="colorgraph">  
       <div class="row">
         <%= f.submit id: 'hidden_submit_button', style: 'display: none;' %>
-        <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" onclick="$('#hidden_submit_button').click(); return false;">Send message</a></div>
+        <div class="col-xs-12 col-md-6"><a href="/contacts/new" class="btn btn-success btn-block btn-lg" onclick="$('#hidden_submit_button').click(); return false;">Send message</a></div>
       </div>
     </form>
   </div>
