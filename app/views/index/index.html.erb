@@ -1,9 +1,10 @@
+<!-- Home page-->
 <!-- Header with Background Image -->
     <header class="business-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1 class="display-3 text-center text-white mt-4">Business Name or Tagline</h1>
+            <h1 class="display-3 text-center text-white mt-4">LOGO</h1> <!-- motto + logo--> 
           </div>
         </div>
       </div>
@@ -12,9 +13,10 @@
     <!-- Page Content -->
     <div class="container paddingtop">
       <div class="row equal">
+        <!-- Food-->
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="https://takeatripwithtina.com/wp-content/uploads/2017/04/Cambodian-foodBo-Luc-Lac-Vietnamese-Shaking-Beef_500x333-300x200.jpg" alt="">
+            <img class="card-img-top" src="<%= image_path("food.jpg") %>" alt="">
             <div class="card-body">
               <h4 class="card-title">Food</h4>
               <p class="card-text">Many scholars claim that the rhetorical function of food is to represent the culture of a country, and that it can be used as a form of communication. Let's explore together it's mysteries.</p>
@@ -22,9 +24,12 @@
             <a href="/posts?search=food" class="btn btn-primary card-button-position">Find Out More!</a>
           </div>
         </div>
+
+
+        <!-- Interesting places-->
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="http://www.planetware.com/photos-tiles/phatthalung.jpg" alt="">
+            <img class="card-img-top" src="<%= image_path("interesting.jpg") %>" alt="">
             <div class="card-body">
               <h4 class="card-title">Interesting places</h4>
               <p class="card-text">Every country has something extraordrinary and special. Come and find out which are most special places around the world!</p>
@@ -32,14 +37,16 @@
             <a href="/posts?search=unique" class="btn btn-primary card-button-position">Find Out More!</a>
           </div>
         </div>
+
+        <!-- Culture-->
         <div class="col-sm-4 my-4">
           <div class="card">
-            <img class="card-img-top" src="https://socialscholar.net/wp-content/uploads/2016/10/Culture-300x200.jpg" alt="">
+            <img class="card-img-top" src="<%= image_path("culture.jpg") %>" alt="">
             <div class="card-body">
               <h4 class="card-title">Culture</h4>
               <p class="card-text">Culture is the social behavior and norms found in human societies. Culture is considered a central concept in anthropology, encompassing the range of phenomena that are transmitted through social learning in human societies.</p>
             </div>
-            <a href="/posts?search=culture" class="btn btn-primary card-button-position">Find Out More!</a>
+            <a href="/posts?search=culture" class="btn btn-primary card-button-position">Find Out More!</a> 
           </div>
         </div>
 
