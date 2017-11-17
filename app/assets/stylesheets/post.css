@@ -59,3 +59,6 @@
     margin-left: 5px !important;
     margin-right: 5px !important;
 }
+#author-header a:visited, #author-header a:hover, #author-header a:active {
+    background: #ffffff !important;
+}

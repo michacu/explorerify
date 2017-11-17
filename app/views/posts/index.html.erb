@@ -16,16 +16,19 @@
             <div class="card-body">
               <h2 class="card-title">
                 <%= post.title %>
-                <% if user_signed_in? && current_user.id == post.author_id %>
-                  <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
-                  <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
-                <% end %>
               </h2>
+              <h3 id="author-header">Author: <a href="/users/<%= post.author_id %>"><%= getusername(post.author_id) %></a></h3>
               <p class="card-text"><%= post.anotation %></p>
-              <a href="/posts/<%= post.id %>" class="btn btn-primary" style="color: #ffffff;">Read More &rarr;</a>
+              <a href="/posts/<%= post.id %>" class="btn btn-primary" style="color: #ffffff; display: inline-block;">Read More &rarr;</a>
+              <% if user_signed_in? && current_user.id == post.author_id %>
+              <div style="float: right; display: inline-block;">
+                <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
+                <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
+              </div>
+              <% end %>
             </div>
             <div class="card-footer text-muted">
-              Posted from : <a href="/users/<%= post.author_id %>"><%= getusername(post.author_id) %></a> on <%= post.created_at %>
+              Posted on <%= post.created_at %>
             </div>
           </div>
           <% end %>
