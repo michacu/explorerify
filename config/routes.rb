@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { registrations: 'registrations' }
   resources :users, :only => [:show]
   get 'index/index'
-  get 'contact/show'
+  get 'about/show'
+  resources 'contacts', only: [:new, :create]
   root 'index#index'
 end

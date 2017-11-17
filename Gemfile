@@ -24,6 +24,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.3'
 gem 'bootstrap-wysihtml5-rails', '~> 0.3.3.8'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+gem 'simple_form', '~> 3.5'
+gem 'mail_form', '~> 1.7'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

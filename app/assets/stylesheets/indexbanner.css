@@ -45,3 +45,5 @@ body {
   bottom:   3px;
   color: #000000 !important;
 }
+
+.hidden { display: none; }
