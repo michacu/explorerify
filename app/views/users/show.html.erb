@@ -1,0 +1,66 @@
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+    <form role="form">
+      <h2>Account Details</h2>
+      <hr class="colorgraph">
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Email:</label><br />
+          <%= @user.email %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Nickname:</label><br />
+          <%= @user.nickname %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Name:</label><br />
+          <%= @user.first_name %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Surname:</label><br />
+          <%= @user.last_name %>
+        </div>
+      </div>
+      </div> 
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>About:</label><br />
+          <%= @user.about %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Visited countries:</label><br />
+          <%= @user.past_countries %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
+          <label>Planning to visit:</label><br />
+          <%= @user.want_countries %>
+        </div>
+      </div>
+      </div>   
+      <hr class="colorgraph">
+    </form>
+  </div>
+</div>

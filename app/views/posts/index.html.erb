@@ -25,7 +25,7 @@
               <a href="/posts/<%= post.id %>" class="btn btn-primary" style="color: #ffffff;">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
-              Posted on <%= post.created_at %>
+              Posted from : <a href="/users/<%= post.author_id %>"><%= getusername(post.author_id) %></a> on <%= post.created_at %>
             </div>
           </div>
           <% end %>

@@ -62,6 +62,16 @@ class PostsController < ApplicationController
     end
   end
 
+  def getusername(userId)
+    @postauthor = User.find(userId)
+    if @postauthor.nickname.empty?
+      return @postauthor.email.split("@").first
+    end
+    return @postauthor.nickname
+  end
+
+  helper_method :getusername
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
