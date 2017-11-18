@@ -4,7 +4,7 @@
       <div class="form-group">
         <%= f.label :name %>
         <div class="field">
-          <%= f.text_field :name, id: :comment_name %>
+          <%= f.text_field :name, id: :comment_name, :required => true %>
         </div>
       </div>
       </div>
@@ -12,7 +12,7 @@
       <div class="form-group">
         <%= f.label :body %>
         <div class="field">
-          <%= f.text_area :body, id: :post_body, :rows => 2, :cols => 120 %>
+          <%= f.text_area :body, id: :post_body, :rows => 2, :cols => 120, :required => true %>
         </div>
       </div>
       </div>    

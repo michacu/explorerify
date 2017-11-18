@@ -21,7 +21,7 @@
       <div class="form-group">
         <div class="field">
           <%= form.label :title %><br />
-          <%= form.text_field :title, id: :post_title %>
+          <%= form.text_field :title, id: :post_title, :required => true %>
         </div>
       </div>
       </div>
@@ -53,7 +53,7 @@
       <div class="form-group">
         <div class="field">
           <%= form.label :body %><br />
-          <%= form.text_area :body, id: :post_body, :class => "wysihtml5", :rows => 20, :cols => 120 %>
+          <%= form.text_area :body, id: :post_body, :class => "wysihtml5", :rows => 20, :cols => 120, :required => true %>
         </div>
       </div>
       </div>     
