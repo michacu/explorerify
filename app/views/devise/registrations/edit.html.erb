@@ -58,6 +58,14 @@
       <div class="row">
       <div class="form-group">
         <div class="field">
+          <%= f.label :avatar_url %><br />
+          <%= f.text_field :avatar_url %>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="form-group">
+        <div class="field">
           <%= f.label :first_name %><br />
           <%= f.text_field :first_name %>
         </div>
@@ -94,7 +102,7 @@
           <%= f.text_area :want_countries, :rows => 3, style: 'width:100%;' %>
         </div>
       </div>
-      </div>   
+      </div> 
       <hr class="colorgraph">
       <div class="row">
         <%= f.submit id: 'hidden_submit_button', style: 'display: none;' %>
