@@ -77,3 +77,8 @@
 .social-nav .pinterest:hover {
     color: #CB2026;
 }
+
+.button-middle-align {
+    margin: 0 auto !important;
+    float: none !important;
+}
