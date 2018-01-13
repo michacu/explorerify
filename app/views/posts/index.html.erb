@@ -20,7 +20,7 @@
               <h3 id="author-header">Author: <a href="/users/<%= post.author_id %>"><%= getusername(post.author_id) %></a></h3>
               <p class="card-text"><%= post.anotation %></p>
               <a href="/posts/<%= post.id %>" class="btn btn-primary" style="color: #ffffff; display: inline-block;">Read More &rarr;</a>
-              <% if user_signed_in? && current_user.id == post.author_id %>
+              <% if (user_signed_in? && current_user.id == post.author_id) || admin_signed_in? %>
               <div style="float: right; display: inline-block;">
                 <%= link_to '', post, method: :delete, class: "btn btn-info glyphicon glyphicon-remove", data: { confirm: 'Are you sure?' } %>
                 <%= link_to '', edit_post_path(post), class: "btn btn-info glyphicon glyphicon-pencil" %>
@@ -87,6 +87,36 @@
               </div>
             </div>
           </div>
+
+          <!-- Side Widget -->
+           <div class="card my-4">
+             <h5 class="card-header">Recent Posts</h5>
+              <div class="container" style="width:100%">
+                <div class="row">
+                <div class="sidebar widget">
+                <ul>
+                <% @posts.first(5).each do |recentpost| %>
+                <a href="/posts/<%= recentpost.id %>">
+                  <li>
+                    <div class="sidebar-thumb">
+                        <img class="animated rollIn" src="<%= recentpost.title_image %>" alt="" />
+                    </div><!-- .Sidebar-thumb -->
+                    <div class="sidebar-content">
+                        <h5 class="animated bounceInRight"><%= recentpost.title %></h5>
+                    </div><!-- .Sidebar-thumb -->
+                    <div class="sidebar-meta">
+                        <span class="time" ><i class="fa fa-clock-o"></i><%= recentpost.created_at %></span>
+                        <span class="comment"><i class="fa fa-comment"></i> <%= recentpost.comments.count %></span>
+                    </div><!-- .Sidebar-meta ends here -->
+                  </li><!-- .Li ends here -->
+                </a>
+                <% end %>
+                </ul><!-- .Ul ends here -->
+              </div><!-- .Widget ends here -->
+          </div><!-- .Container ends here -->
+          </div>
+        </div>
+
         </div>
 
       </div>
