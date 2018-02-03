@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<% if notice.is_a?(String) %>
+ <div class="alert alert-info">
+    <div class="alert-success"><%= notice %></div>
+</div>
+<% end %>
 <!-- Page Content -->
     <div class="container">
       <div class="row">

@@ -55,6 +55,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+    @post.comments.destroy
     @post.destroy
     respond_to do |format|
       format.html { redirect_to posts_url, notice: 'Post was successfully destroyed.' }
@@ -63,11 +64,14 @@ class PostsController < ApplicationController
   end
 
   def getusername(userId)
-    @postauthor = User.find(userId)
-    if @postauthor.nickname.empty?
-      return @postauthor.email.split("@").first
+    if User.exists?(id: userId)
+      @postauthor = User.find(userId)
+      if @postauthor.nickname.empty?
+        return @postauthor.email.split("@").first
+      end
+      return @postauthor.nickname
     end
-    return @postauthor.nickname
+    return ''
   end
 
   helper_method :getusername
