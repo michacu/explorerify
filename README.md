@@ -1,26 +1,27 @@
 # README
+* Ruby version - Ruby 2.4.3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* System dependencies - https://www.ruby-lang.org/en/documentation/installation/
 
-Things you may want to cover:
+* Other dependencies are present in Gemfile
 
-* Ruby version
+* Configuration run commands:
+1. git clone https://github.com/michacu/explorerify.git (download project throught git - need to have git configured - see git docs)
+2. cd explorerify (go into project directory)
+3. bundle install (install all project dependencies and libraries)
 
-* System dependencies
+* Database creation:
+1. rake db:create
 
-* Configuration
+* Database initialization:
+1. rake db:migrate
 
-* Database creation
+* Database re-creation:
+1. rake db:drop
+2. rake db:reset
+3. rake db:create db:migrate
 
-* Database initialization
+* Run server:
+1. rails s (run server on port 3000)
+2. access web throught browser adress: localhost:3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* manamanamanamanamaamnammanmamamamanmnamanmnamanmam
-
-* ...
